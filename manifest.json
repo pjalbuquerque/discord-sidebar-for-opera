@@ -1,0 +1,37 @@
+{
+  "manifest_version": 2,
+
+  "name": "Discord Sidebar",
+  "description": "Discord for Opera sidebar extention.",
+  "developer": {
+    "name": "Paulo Albuquerque",
+    "url": "https://github.com/pjalbuquerque/"
+  },
+  "version": "1.0.0",
+  "icons": {
+    "16": "src/icons/16.png",
+    "19": "src/icons/19.png",
+    "38": "src/icons/38.png",
+    "48": "src/icons/48.png",
+    "128": "src/icons/128.png"
+  },
+
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "audioCapture",
+    "https://discordapp.com/*",
+    "https://accounts.google.com/*",
+    "https://accounts.google.com.br/*"
+  ],
+  "background": { "scripts": ["src/js/background.js"] },
+  "sidebar_action": {
+    "default_icon": {
+      "19": "src/icons/19.png",
+      "38": "src/icons/38.png"
+    },
+    "default_title": "Discord",
+    "default_panel": "src/sidebar.html"
+  },
+  "options_page": "src/options.html"
+}
